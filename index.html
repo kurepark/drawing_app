@@ -12,6 +12,23 @@
             <div class="drwaing_box">
                 <canvas></canvas>
                 <div class="function">
+                    <button type="button" id="mode-btn">색채우기</button>
+                    <button type="button" id="destroy-btn">전체지우기</button>
+                    <button type="button" id="esrase-btn">지우개</button>
+                    <lable for="text" class="text-label">텍스트 넣기</lable>
+                    <input
+                        type="text"
+                        placeholder="더블클릭으로 작성하세요"
+                        id="text"
+                    />
+                    <label for="file" class="input_btn">이미지 넣기</label>
+                    <input
+                        type="file"
+                        accept="image/*"
+                        id="file"
+                        value="add image"
+                    />
+                    <button type="button" id="save">save</button>
                     <label for="line-width" class="line-width-label">
                         <span class="line-width-small"></span>
                         <input
@@ -31,27 +48,10 @@
                             id="font-size"
                             min="14"
                             max="45"
-                            value="16"
+                            value="26"
                         />
                         <span class="font-size-big">가</span></lable
                     >
-                    <button type="button" id="mode-btn">색채우기</button>
-                    <button type="button" id="destroy-btn">전체지우기</button>
-                    <button type="button" id="esrase-btn">지우개</button>
-                    <lable for="text" class="text-label">텍스트 넣기</lable>
-                    <input
-                        type="text"
-                        placeholder="더블클릭으로 작성하세요"
-                        id="text"
-                    />
-                    <label for="file" class="input_btn">이미지 넣기</label>
-                    <input
-                        type="file"
-                        accept="image/*"
-                        id="file"
-                        value="add image"
-                    />
-                    <button type="button" id="save">save</button>
                 </div>
             </div>
             <div class="color_set">

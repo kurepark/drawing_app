@@ -22,7 +22,7 @@ ctx.lineCap = "round";
 
 let isPainting = false;
 let isFilling = false;
-let fontSize = 0;
+let fontSize = "";
 
 function onMove(e) {
     if(isPainting) {
@@ -114,8 +114,14 @@ function onDoubleClick (e) {
         ctx.save(); // 현재의 ctx 의 상태를 저장
         ctx.beginPath();
         ctx.lineWidth = 1;
-        ctx.font = `${fontSize}px serif`;
+        console.log(fontSize);
+        if(fontSize !== "") {
+            ctx.font = `${fontSize}px serif`;
+        } else {
+            ctx.font = "20px serif";
+        }
         ctx.fillText(text, e.offsetX, e.offsetY);
+        console.log(text);
         ctx.restore();
     }
 }
