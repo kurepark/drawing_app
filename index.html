@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meme maker</title>
+        <link href="./style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="drwaing_box">
+                <canvas></canvas>
+                <div class="function">
+                    <label for="line-width" class="line-width-label">
+                        <span class="line-width-small"></span>
+                        <input
+                            id="line-width"
+                            type="range"
+                            min="1"
+                            max="10"
+                            value="5"
+                            step="0.5"
+                        />
+                        <span class="line-width-big"></span>
+                    </label>
+                    <lable for="font-size" class="font-size-label">
+                        <span class="font-size-small">가</span>
+                        <input
+                            type="range"
+                            id="font-size"
+                            min="14"
+                            max="45"
+                            value="16"
+                        />
+                        <span class="font-size-big">가</span></lable
+                    >
+                    <button type="button" id="mode-btn">색채우기</button>
+                    <button type="button" id="destroy-btn">전체지우기</button>
+                    <button type="button" id="esrase-btn">지우개</button>
+                    <lable for="text" class="text-label">텍스트 넣기</lable>
+                    <input
+                        type="text"
+                        placeholder="더블클릭으로 작성하세요"
+                        id="text"
+                    />
+                    <label for="file" class="input_btn">이미지 넣기</label>
+                    <input
+                        type="file"
+                        accept="image/*"
+                        id="file"
+                        value="add image"
+                    />
+                    <button type="button" id="save">save</button>
+                </div>
+            </div>
+            <div class="color_set">
+                <input type="color" id="color" class="color_input" />
+                <div
+                    class="color-option"
+                    data-color="#1abc9c"
+                    style="background-color: #1abc9c"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#3498db"
+                    style="background-color: #3498db"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#34495e"
+                    style="background-color: #34495e"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#27ae60"
+                    style="background-color: #27ae60"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#8e44ad"
+                    style="background-color: #8e44ad"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#f1c40f"
+                    style="background-color: #f1c40f"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#e74c3c"
+                    style="background-color: #e74c3c"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#95a5a6"
+                    style="background-color: #95a5a6"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#d35400"
+                    style="background-color: #d35400"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#bdc3c7"
+                    style="background-color: #bdc3c7"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#2ecc71"
+                    style="background-color: #2ecc71"
+                ></div>
+                <div
+                    class="color-option"
+                    data-color="#e67e22"
+                    style="background-color: #e67e22"
+                ></div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
